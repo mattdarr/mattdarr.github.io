@@ -6,7 +6,7 @@
     flat
     class="primary white--text"
   >
-    <span class="title ml-3 mr-5 logo" @click="$router.push('/')">
+    <span class="title ml-3 mr-2 logo" @click="$router.push('/')">
       Matt Darrington - Portfolio
     </span>
     <v-btn to="/" v-if="$route.path !== '/'">Back to projects</v-btn>

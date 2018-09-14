@@ -2,7 +2,6 @@
   <v-container fluid grid-list-lg>
     <v-layout row wrap>
       <v-flex>
-        <v-btn to="/">Back to projects</v-btn>
         <h1>
           {{project.name}}
           <span v-if="project.link">
@@ -63,6 +62,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   video {
+    cursor: pointer;
     max-width: 100%;
 
     &.mobile-video {

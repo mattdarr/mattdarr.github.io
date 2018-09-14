@@ -4,7 +4,7 @@
     <v-layout row wrap>
       <v-flex md4 sm6 xs12 v-for="(project, key) in $store.state.projects.work" :key="key">
         <v-img :src="project.poster" :aspect-ratio="16/9" @click="setProject(project)" class="project elevation-4 mb-2" align-center>
-          <h2 class="white--text text-xs-center">{{project.name}}</h2>
+          <h2 class="white--text">{{project.name}}</h2>
         </v-img>
       </v-flex>
     </v-layout>
@@ -13,7 +13,7 @@
     <v-layout row wrap>
       <v-flex md4 sm6 xs12 v-for="(project, key) in $store.state.projects.personal" :key="key">
         <v-img :src="project.poster" :aspect-ratio="16/9" @click="setProject(project)" class="project elevation-2">
-          <h3>{{project.name}}</h3>
+          <h2 class="white--text">{{project.name}}</h2>
         </v-img>
       </v-flex>
     </v-layout>

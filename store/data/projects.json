@@ -31,6 +31,16 @@
       "description": "A static site that uses CSS animations and page transitions to engage the user. Fairly complex layouts and animations that needed to work smoothly and transition to mobile seamlessly. Creating custom Google maps themes and integration was fun and interesting."
     },
     {
+      "name": "Nu Skin - ageLOC Me",
+      "date": "2016",
+      "tech": ["Angular", "Phonegap", "SmoothState.js", "Less"],
+      "video": "https://s3.amazonaws.com/mattdarr-portfolio/ageLOC-Me.mp4",
+      "mobile": "https://s3.amazonaws.com/mattdarr-portfolio/ageLOC-Me-Mobile.mp4",
+      "poster": "./static/images/ageLOC-Me-Poster.jpg",
+      "link": "https://www.nuskin.com/en_US/ageloc-me-assessment.html",
+      "description": "This started as a web-app, but late in the process Nu Skin decided they wanted it to work on both iOS and Android - so we performed some miracles and, using Phonegap, were able to get this app working on web - iOS - and Android. The complex and responsive UI, CSS animations, circle sliders, and progressive special facial effects all added up to be quite a complex piece."
+    },
+    {
       "name": "Hookd",
       "date": "2015",
       "tech": ["SASS", "Gulp", "CSS Animations", "Laravel", "Scroll Events"],
@@ -43,7 +53,7 @@
     {
       "name": "Poke Quiz - Amazon Echo Show",
       "date": "January 2018",
-      "tech": ["Alexa", "Amazon Render Templates", "Echo Show"],
+      "tech": ["Alexa", "Node.js", "AWS Lambda", "Amazon Render Templates", "Echo Show"],
       "video": "https://s3.amazonaws.com/mattdarr-portfolio/Poke-Quiz.mp4",
       "mobile": null,
       "poster": "./static/images/Poke-Quiz-Poster.jpg",
@@ -51,7 +61,7 @@
       "description": "I was one of the first people to ever work with the new (at the time) echo show device from Amazon. It was quite tricky to use and create compelling visuals for a skill due to the restrictions of Amazon's templating system, but I was able to find some creative ways to get this skill to work how I wanted."
     },
     {
-      "name": "Strata",
+      "name": "RAIN - Strata",
       "date": "January 2018",
       "tech": ["Vue", "Vuex", "Adonis.js", "MySQL"],
       "video": "https://s3.amazonaws.com/mattdarr-portfolio/Strata.mp4",

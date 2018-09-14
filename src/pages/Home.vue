@@ -1,19 +1,19 @@
 <template>
   <v-container fluid grid-list-lg>
-    <h1>Work Projets</h1>
+    <h1>Work Projects</h1>
     <v-layout row wrap>
       <v-flex md4 sm6 xs12 v-for="(project, key) in $store.state.projects.work" :key="key">
         <v-img :src="project.poster" :aspect-ratio="16/9" @click="setProject(project)" class="project elevation-4 mb-2" align-center>
-          <h2 class="white--text">{{project.name}}</h2>
+          <h2 class="white--text text-xs-center">{{project.name}}</h2>
         </v-img>
       </v-flex>
     </v-layout>
 
-    <h1 class="mt-5">Personal Projets</h1>
+    <h1 class="mt-5">Personal Projects</h1>
     <v-layout row wrap>
       <v-flex md4 sm6 xs12 v-for="(project, key) in $store.state.projects.personal" :key="key">
         <v-img :src="project.poster" :aspect-ratio="16/9" @click="setProject(project)" class="project elevation-2">
-          <h2 class="white--text">{{project.name}}</h2>
+          <h2 class="white--text text-xs-center">{{project.name}}</h2>
         </v-img>
       </v-flex>
     </v-layout>

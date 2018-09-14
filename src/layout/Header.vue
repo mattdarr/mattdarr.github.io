@@ -2,8 +2,6 @@
   <v-toolbar
     app
     fixed
-    clipped-left
-    flat
     class="primary white--text"
   >
     <span class="title ml-3 mr-2 logo" @click="$router.push('/')">

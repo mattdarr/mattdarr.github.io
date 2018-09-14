@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list-lg>
+  <v-container grid-list-lg>
     <v-layout row wrap>
       <v-flex>
         <h1>
@@ -10,7 +10,7 @@
           </span>
         </h1>
         <v-layout row wrap>
-          <v-flex md8 xs12>
+          <v-flex md9 sm8 xs12>
             <div class="project-information mt-2">
               <p><b>Approximate Date:</b> {{project.date}}</p>
               <p><b>Relevant Technologies Used:</b>
@@ -29,7 +29,7 @@
               <v-img v-else :src="project.poster" :aspect-ratio="16/9"></v-img>
             </div>
           </v-flex>
-          <v-flex md4 xs12 v-if="project.mobile">
+          <v-flex md3 sm4 xs12 v-if="project.mobile">
             <h3>Mobile Interface Video</h3>
             <video class="mobile-video" controls>
               <source :src="project.mobile"></source>

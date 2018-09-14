@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list-lg>
+  <v-container grid-list-lg>
     <h1>Work Projects</h1>
     <v-layout row wrap>
       <v-flex md4 sm6 xs12 v-for="(project, key) in $store.state.projects.work" :key="key">

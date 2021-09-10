@@ -1,9 +1,5 @@
 <template>
-  <v-toolbar
-    app
-    fixed
-    class="primary white--text"
-  >
+  <v-toolbar app fixed class="primary white--text">
     <span class="title ml-3 mr-2 logo" @click="$router.push('/')">
       Matt Darrington - Portfolio
     </span>
@@ -20,18 +16,16 @@
 
 <script>
 export default {
-  name: 'layout-header',
-  data () {
-    return {
-    }
+  name: "layout-header",
+  data() {
+    return {};
   },
-  methods: {
-  }
-}
+  methods: {},
+};
 </script>
 
 <style lang="scss">
-  .logo {
-    cursor: pointer;
-  }
+.logo {
+  cursor: pointer;
+}
 </style>

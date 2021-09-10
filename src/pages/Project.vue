@@ -6,13 +6,14 @@
           {{project.name}}
           <span v-if="project.link">
             -
-            <a  :href="project.link" target="_blank">Live Site</a>
+            <a :href="project.link" target="_blank">Live Site</a>
           </span>
         </h1>
         <v-layout row wrap>
           <v-flex md9 sm8 xs12>
             <div class="project-information mt-2">
               <p><b>Approximate Date:</b> {{project.date}}</p>
+              <p v-if="project.role"><b>Role:</b> {{project.role}}</p>
               <p><b>Relevant Technologies Used:</b>
                 <span v-for="(skill, index) in project.tech" :key="index">
                   {{skill}}
@@ -20,6 +21,13 @@
                 </span>
               </p>
               <p><b>Description:</b> {{project.description}}</p>
+              <p v-if="project.additionalLinks">
+                <b>Additional links:</b>
+                <span v-for="(link, index) in project.additionalLinks" :key="index">
+                  <a :href="link.url" target="_blank">{{link.text}}</a>
+                  <span v-if="index != project.additionalLinks.length - 1">- </span>
+                </span>
+              </p>
             </div>
             <div>
               <h3>Desktop Interface Video</h3>
@@ -43,31 +51,29 @@
 
 <script>
 export default {
-  name: 'Project',
+  name: "Project",
   props: [],
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
   computed: {
     project() {
       return this.$store.state.currentProject;
-    }
+    },
   },
-  methods: {
-  }
-}
+  methods: {},
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  video {
-    cursor: pointer;
-    max-width: 100%;
+video {
+  cursor: pointer;
+  max-width: 100%;
 
-    &.mobile-video {
-      margin: 0 auto;
-      max-height: 80vh;
-    }
+  &.mobile-video {
+    margin: 0 auto;
+    max-height: 80vh;
   }
+}
 </style>

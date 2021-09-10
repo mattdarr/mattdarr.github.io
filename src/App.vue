@@ -1,35 +1,29 @@
 <template>
   <v-app>
-
-    <layout-header>
-    </layout-header>
+    <layout-header> </layout-header>
 
     <v-content>
-      <router-view>
-      </router-view>
+      <router-view> </router-view>
     </v-content>
 
-    <layout-footer>
-    </layout-footer>
-
+    <layout-footer> </layout-footer>
   </v-app>
 </template>
 
 <script>
-import Header from './layout/Header'
-import Footer from './layout/Footer'
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    'layout-header': Header,
-    'layout-footer': Footer
+    "layout-header": Header,
+    "layout-footer": Footer,
   },
-  data () {
-    return {
-    }
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style lang="scss">

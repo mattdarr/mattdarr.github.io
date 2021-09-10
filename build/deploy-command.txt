@@ -3,5 +3,5 @@ cd dist
 git init
 git add -A
 git commit -m "deploy"
-git add remote origin https://github.com/mattdarr/mattdarr.github.io.git
+git remote add origin git@github.com:mattdarr/mattdarr.github.io.git
 git push origin master --force
